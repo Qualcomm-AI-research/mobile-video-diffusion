@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mobile Video Diffusion">
+  <meta property="og:title" content="Mobile Video Diffusion"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Mobile Video Diffusion</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Mobile Video Diffusion</h1>
+             <div class="is-size-5 publication-authors">
+			<span class="author-block"><a href="https://nl.linkedin.com/in/haitambenyahia">Haitam Ben Yahia*</a>,</span>
+			<span class="author-block"><a href="https://scholar.google.com/citations?user=ypspak0AAAAJ">Denis Korzhenkov*</a>,</span>
+			<span class="author-block"><a href="https://nl.linkedin.com/in/ioannis-lelekas-609bb5151">Ioannis Lelekas</a>,</span>
+			<span class="author-block"><a href="https://aghodrati.github.io/">Amir Ghodrati</a>,</span>
+			<span class="author-block"><a href="https://habibian.github.io/">Amirhossein Habibian</a></span>
+            </div>
+			<div class="is-size-5 publication-authors">
+              <h2>Qualcomm AI Research</h2>
+              <h4 class="is-size-7">*Equal contribution</h4>
+            </div>
+			<div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2412.07583" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a method="post" href="mailto:ahabibia@qti.qualcomm.com?subject=MobileVD%20Code%20&body=%20Hi%20Amir,%20I%20am%20interested%20in%20getting%20code%20for%20MobileVD." class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                  </span>
+                  <span>Code (soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a method="post" href="mailto:ahabibia@qti.qualcomm.com?subject=MobileVD%20Code%20&body=%20Hi%20Amir,%20I%20am%20interested%20in%20getting%20the%20checkpoint%20for%20MobileVD." class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/images/hf.png" alt="Hugging Face Demo">
+                  </span>
+                  <span>Checkpoint (soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="columns">
+    <div class="column is-1"> </div>
+    <div class="column is-10">
+      <article class="media">
+        <figure class="media-center">
+          <video poster="" autoplay controls muted loop height="100%" width="100%">
+            <source src="static/videos/cover_video.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </article>
+    </div>
+    <div class="column is-1"> </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Video diffusion models have achieved impressive realism and controllability but are limited by high
+              computational demands, restricting their use on mobile devices. This paper introduces the first
+              mobile-optimized video diffusion model. By optimizing the spatio-temporal UNet from Stable Video
+              Diffusion (SVD), we reduce memory and computational requirements. We achieve this by lowering the
+              resolution to 512 x 256 px, incorporating multi-scale temporal representations, and introducing
+              two novel pruning schema to reduce the number of channels and temporal blocks in the UNet. Furthermore,
+              we employ adversarial finetuning to reduce the denoising to a single step. Our model, MobileVD,
+              is 523x more efficient (1817.2 vs. 4.34 TFLOPs) with a slight quality drop
+              (FVD 149 vs. 171), generating latents for a 14 x 512 x 256 px clip in 1.7 seconds on
+              a Xiaomi 14 Pro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End paper abstract -->
+
+<!--  Method-->
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+        <p>
+
+          We start with Stable Video Diffusion (SVD), which generates 14 frames at 1024 × 576 resolution with 25 sampling steps. Through the following optimizations, we enhance SVD's efficiency for mobile deployment:
+          <ol>
+            <li><strong>Adversarial Finetuning:</strong> Reducing the number of denoising steps to a single step using adversarial finetuning, enabling faster video generation. </li>
+            <li><strong>Low Resolution Finetuning:</strong> Reducing to the mobile resolution of 512 × 256 by finetuning the diffusion denoiser at this resolution. </li>
+            <li><strong>Temporal Multi-scaling:</strong> Adding down-sampling and up-sampling operations along the temporal axis. </li>
+            <li><strong>Optimized Cross-Attention:</strong> Cross-attention layers are optimized by removing non-op computations, enabling on-device model execution. </li>
+            <li><strong>Channel Funnels:</strong> Reducing the number of channels to save computations with minimal quality loss. A channel funnel is placed between two affine layers, reducing intermediate channel dimensionality. </li>
+          <figure class="image">
+            <img src="static/images/funnel_figure.png" />
+          </figure>
+            <li><strong>Temporal Block Pruning:</strong> A learnable pruning technique to remove less important temporal blocks while minimizing quality degradation. </li>
+          </ol>
+
+
+        </p>
+        </div>
+
+        <h2 class="title is-3"> Results </h2>
+        <div class="content has-text-justified">
+        <table class="table is-fullwidth is-hoverable is-narrow">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>NFE</th>
+              <th>FVD</th>
+              <th>TFLOPs</th>
+              <th colspan="2">Latency (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" colspan="1">Resolution 1024 x 576</th>
+              <th colspan="3" class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" ></th>
+              <th class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" >GPU</th>
+              <th class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" >Phone</th>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">SVD</th>
+              <td>50</td>
+              <td>149</td>
+              <td>45.43</td>
+              <td>376</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">AnimateLCM*</th>
+              <td>8</td>
+              <td>281</td>
+              <td>45.43</td>
+              <td>376</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">UFOGen*</th>
+              <td>1</td>
+              <td>1917</td>
+              <td>45.43</td>
+              <td>376</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">LADD*</th>
+              <td>1</td>
+              <td>1894</td>
+              <td>45.43</td>
+              <td>376</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">SF-V*</th>
+              <td>1</td>
+              <td>181</td>
+              <td>45.43</td>
+              <td>376</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-background-info-light has-text-left pl-6">MobileVD-HD (ours)</th>
+              <td class="has-background-info-light">1</td>
+              <td class="has-background-info-light">184</td>
+              <td class="has-background-info-light">23.63</td>
+              <td class="has-background-info-light">227</td>
+              <td class="has-background-info-light">OOM</td>
+            </tr>
+            <tr>
+              <th colspan="1" class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter">Resolution 512 x 256</th>
+              <th colspan="3" class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" ></th>
+              <th class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" ></th>
+              <th class="is-italic has-text-grey-light has-text-weight-light has-background-white-ter" ></th>
+            </tr>
+            <tr>
+              <th class="has-text-left pl-6">SVD</th>
+              <td>50</td>
+              <td>476</td>
+              <td>8.6</td>
+              <td>82</td>
+              <td>OOM</td>
+            </tr>
+            <tr>
+              <th class="has-background-info-light has-text-left pl-6">MobileVD (ours)</th>
+              <td class="has-background-info-light">1</td>
+              <td class="has-background-info-light">171</td>
+              <td class="has-background-info-light">4.34</td>
+              <td class="has-background-info-light">45</td>
+              <td class="has-background-info-light">1780</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="has-text-left content is-small">
+          FLOPs and latency are provided for a single function evaluation with batch size of 1. For rows marked with asterisk*, FVD measurements were taken from <a href="https://arxiv.org/abs/2406.04324" target="_blank">Zhang et al. </a>, while performance metrics are based on our measurements for UNet used by SVD. For consistency with these results, FVD for SVD and our MobileVD model was measured on UCF-101 dataset at 7 frames per second. Phone Latency is measured on a Xiamo-14 Pro.
+        </p>
+        </div>
+<!--        -->
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!--  End method-->
+
+<!-- Video carousel -->
+<section class="hero">
+  <div class="hero-body">
+  <div class="">
+  <div class="columns">
+    <div class="column is-3">
+      <h2 class="title has-text-centered">SVD</h2>
+    </div>
+    <div class="column is-3">
+      <h2 class="title has-text-centered">AnimateLCM</h2>
+    </div>
+    <div class="column is-3">
+      <h2 class="title has-text-centered">SF-V</h2>
+    </div>
+    <div class="column is-3">
+      <h2 class="title has-text-centered">MobileVD</h2>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-12">
+        <div id="results-carousel-sfv" class="carousel results-carousel">
+<!--        END HEADER -->
+          <div class="item">
+            <video poster="" autoplay controls muted loop height="100%" width="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/main_comparison0.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item">
+            <video poster="" autoplay controls muted loop height="100%" width="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/main_comparison1.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item">
+            <video poster="" autoplay controls muted loop height="100%" width="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/main_comparison2.mp4"
+              type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!--        BEGIN FOOTER -->
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <h2 class="title is-3">BibTex</h2>
+          <div class="content has-text-justified">
+            <pre>
+              <code>
+              @article{
+                benyahia2024mobilevd,
+                author={Ben Yahia, Haitam and Korzhenkhov, Denis and Lelekas, Ioannis and Ghodrati, Amir and Habibian, Amirhossein},
+                title={Mobile Video Diffusion},
+                journal={arXiv},
+                year={2024},
+                url={https://arxiv.org/abs/2412.07583}
+              }
+              </code>
+
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End paper abstract -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.<br>
+			This website is licensed under a <a rel="license"  href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+            <br>
+            <br>
+            Qualcomm AI Research is an initiative of Qualcomm Technologies, Inc.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
